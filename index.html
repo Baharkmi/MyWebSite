@@ -548,7 +548,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <input type="hidden" name="_next" value="https://baharkmi.github.io/MyWebSite/thanks.html">
+              <input type="hidden" name="_next" value="thanks.html">
               <!-- <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll get back to you ASAP!"> -->
               <input type="hidden" name="_captcha" value="false">
               <input type="text" name="_honey" style="display:none">
@@ -560,32 +560,6 @@
               </div>
               <div class="text-center"><button id="sendEmail" type="submit">Send Message</button></div>
             </form>
-
-            <script>
-              document.getElementById('sendEmail').addEventListener('submit', function(event) {
-              event.preventDefault(); // Prevent the default form submission behavior
-
-              const formData = new FormData(this); // Get form data
-              const url = 'https://formsubmit.co/1abac618db404a760c5c3df13f95881a'; // Replace with your endpoint URL
-
-              fetch(url, {
-                method: 'POST',
-                body: formData
-              })
-              .then(response => response.json())
-              .then(data => {
-                // Process the response data here if needed
-                alert('Form submitted successfully!');
-                // Optionally, you can redirect to a different page after successful submission
-                window.location.href = 'thanks.html';
-              })
-              .catch(error => {
-                console.error('Fetch Error:', error);
-                alert('An error occurred while submitting the form.');
-              });
-            });
-
-            </script>
           </div>
 
         </div>
