@@ -548,7 +548,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <input type="hidden" name="_next" value="https://baharkmi.github.io/MyWebSite/thanks.html">
+              <input type="hidden" name="_next" value="https://baharkmi.github.io/MyWebSite/thanks.htmlfo">
               <!-- <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll get back to you ASAP!"> -->
               <input type="hidden" name="_captcha" value="false">
               <input type="text" name="_honey" style="display:none">
@@ -558,7 +558,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button id="sendEmail" type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -598,6 +598,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const sendEmail = document.getElementById("sendEmail");
+    sendEmail.addEventListener("click", e => { 
+      e.preventDefault();
+    })
+
+    </script>
 
 </body>
 
