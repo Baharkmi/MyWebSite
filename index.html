@@ -558,8 +558,34 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button id="sendEmail" type="submit">Send Message</button></div>
             </form>
+
+            <script>
+              document.getElementById('sendEmail').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent the default form submission behavior
+
+              const formData = new FormData(this); // Get form data
+              const url = 'https://formsubmit.co/1abac618db404a760c5c3df13f95881a'; // Replace with your endpoint URL
+
+              fetch(url, {
+                method: 'POST',
+                body: formData
+              })
+              .then(response => response.json())
+              .then(data => {
+                // Process the response data here if needed
+                alert('Form submitted successfully!');
+                // Optionally, you can redirect to a different page after successful submission
+                window.location.href = 'thanks.html';
+              })
+              .catch(error => {
+                console.error('Fetch Error:', error);
+                alert('An error occurred while submitting the form.');
+              });
+            });
+
+            </script>
           </div>
 
         </div>
