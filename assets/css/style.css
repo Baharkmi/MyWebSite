@@ -19,7 +19,7 @@
 .social__list {
   display: flex;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -37,6 +37,15 @@
   align-items: center;
   font-size: 20px;
   color: var(--heading-font-color)
+}
+
+.btn {
+  font-size: 18px;
+}
+
+.btn :hover {
+  color: white;
+  font-weight: bold;
 }
 
 body {
@@ -566,7 +575,6 @@ section {
   background: url("../img/MyPhoto.JPG") center center no-repeat;
   background-size: cover;
   min-height: 400px;
-  margin-left: 100px;
   width: 400px;
 }
 
@@ -815,7 +823,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .img-fluid{
-  width: 400px;
+  width: 500px;
   height: 270px;
 }
 
