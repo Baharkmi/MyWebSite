@@ -40,7 +40,16 @@
 }
 
 .btn {
-  font-size: 18px;
+  background: #d43076;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.btn a{
+  color: white;
 }
 
 .btn :hover {
