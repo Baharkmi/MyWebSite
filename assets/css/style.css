@@ -522,6 +522,7 @@ section {
 --------------------------------------------------------------*/
 .home .content {
   padding: 30px 0;
+  margin-left: 20px;
 }
 
 .home .content h3 {
@@ -580,6 +581,7 @@ section {
 }
 
 .home .image {
+  margin-left: 40px;
   background: url("../img/MyPhoto.JPG") center center no-repeat;
   background-size: cover;
   min-height: 400px;
