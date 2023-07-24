@@ -581,7 +581,7 @@ section {
 }
 
 .home .image {
-  margin-left: 40px;
+  margin-left: 20px;
   background: url("../img/MyPhoto.JPG") center center no-repeat;
   background-size: cover;
   min-height: 400px;
